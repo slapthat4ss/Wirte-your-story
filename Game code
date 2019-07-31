@@ -1,0 +1,56 @@
+#Variables(input)
+matrix = ""
+system = ""
+enemy = ""
+look = ""
+Businessmen = ""
+job = ["" , "" , "" , ""]
+adj = ""
+enemy = ""
+unplugged = ""
+it = ""
+#the intro
+
+print(" Hello to the Game")
+print("Lests start writing the story")
+neo = input("Whats your name? ")
+print("Are you ready to start the story, " + neo)
+Matrix = input("Whats your story?")
+print("So this what you like?" + matrix)
+print(" Prepare your self and lets begin")
+
+#inputs from users
+system = input("which category is it? " + matrix)
+
+#input enemy
+enemy = input(" Write a word describe ur " + system)
+
+#input verb
+look = input("Verb you do when your in a place " )
+
+#input jobs 4
+print("Give me 4 jobs?")
+for i in range(len(job)):
+    job[i] = input(f"Jobs  {i+1} / {len(job)}" )
+
+#input verb past
+unplugged = input("Give me a past verb  ")
+
+#input adj
+adj = input(" What is your best description(adj)? ")
+
+#input i =)
+it = input(" What's your most valuable thing? ")
+
+#the Stroy
+thestory = (f"The {matrix} is a {system}, {neo}. That {system} is our {enemy}. " +
+f"But when you're inside, you {look} around, what do you see? " +
+f"{job[0]}, {job[1]}, {job[2]}, {job[3]}.The very minds " +
+f"of the people we are trying to save. But until we do, " +
+f"these people are still a part of that {system} and that makes " +
+f"them our {enemy}. You have to understand, most of these people " +
+f"are not ready to be {unplugged}. And many of them are so {adj}, " +
+f"so hopelessly dependent on the system, that they will fight to protect {it}.")
+
+print(thestory)
+input()
